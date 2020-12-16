@@ -1,5 +1,5 @@
-""" There was no need for this much lists. It could have been done with less and the code would be clearer, however this whole
-thinng is about seeing my growth and mistakes. Therefore I'm keeping it """
+""" There is no need for this much lists. It could have been done with less lists and the code would be clearer, however this whole
+thinng is about seeing my growth over time. Therefore I'm keeping it """
 InputList = []
 new_list = []
 final_list = []
