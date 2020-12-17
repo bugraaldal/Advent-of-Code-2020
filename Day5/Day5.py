@@ -1,11 +1,5 @@
 
 def P1():
-    assert find_row("BFFFBBFRRR") == 70
-    assert find_row("FFFBBBFRRR") == 14
-    assert find_row("BBFFBBFRLL") == 102
-    assert find_col("BFFFBBFRRR") == 7
-    assert find_col("FFFBBBFRRR") == 7
-    assert find_col("BBFFBBFRLL") == 4
     ID_Search = 0
     resultList = []
     with open("Day5.txt") as f:
@@ -56,7 +50,7 @@ def find_row(line):
 def P2():
     IDs = [int(line.strip().translate(str.maketrans("BFRL", "1010")), 2)
            for line in open("Day5.txt")]
-    print("Q1: {}; Q2 {}".format(max(IDs), [
+    print("Q1: {}\nQ2 {}".format(max(IDs), [
           x for x in range(max(IDs)) if x not in IDs and x+1 in IDs and x-1 in IDs])) # I wouldn't recommend this usage of one-liners.
                                                                                       # However just like Day4, I was experimenting with them.
                                                                                      
