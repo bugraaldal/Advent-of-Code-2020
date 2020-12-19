@@ -1,4 +1,4 @@
-
+# I don't really have anything to say about this code, I believe this one is pretty good.
 def setFile(file_name):
     with open(file_name) as file:
         inputs = []
