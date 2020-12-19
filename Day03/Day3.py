@@ -15,10 +15,8 @@ def Route(X, Y, grid):
                 x = 0
     return trees
 
-
-tests = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
-
 # Part 2
+tests = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
 total = 1
 for test in tests:
     total = total * Route(test[0], test[1], input)
