@@ -52,6 +52,7 @@ with open("Day8.txt", "r") as f:
 def part_two(all):
     for i in range(len(all)):
         allCopy = copy.deepcopy(all) # If not copied the program outputs a wrong answer
+        # Changing the "jmp"s with "nop"s.
         if allCopy[i].split()[0] == "jmp":
             allCopy[i] = allCopy[i].replace("jmp", "nop")
         elif allCopy[i].split()[0] == "nop":
