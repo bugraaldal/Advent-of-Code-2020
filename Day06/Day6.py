@@ -17,7 +17,7 @@ def atLeast_yes(inputs):  # Q1 Answer
     result = 0
     for group in inputs:
         # https://en.wikipedia.org/wiki/Set_(mathematics)
-        result += len(set.union(*group))
+        result += len(set.union(*group)) # https://stackoverflow.com/questions/31253109/how-can-i-find-the-union-on-a-list-of-sets-in-python/31253153
     return int(result)
 
 
