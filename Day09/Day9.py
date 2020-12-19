@@ -1,7 +1,7 @@
 """ I see that I was being silly with the names. I would say this is a bad practice. """
 invld = -1
 prev = 25
-with open('Day9.txt') as read:
+with open("Day9.txt") as read:
     numbers = [int(i) for i in read.readlines()]
 
 for i in range(prev, len(numbers)):
