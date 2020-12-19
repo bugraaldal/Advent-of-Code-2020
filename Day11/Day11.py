@@ -1,6 +1,6 @@
 # import os
 # os.chdir("/home/buura/Desktop/Python/AdventOfCode2020")
-""" This must be the hardest question of all... """
+""" This must be the hardest question of all... Also, this has the slowest compile time among the others. """
 import copy
 
 
