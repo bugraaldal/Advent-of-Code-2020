@@ -8,7 +8,7 @@ def P1():
             col = find_col(line)
             ID_Search = max(ID_Search, row*8+col)
             resultList.append(row*8+col)
-    print("Max id: {}".format(resultList))
+    print(f"Max id: {resultList}")
     resultList.sort()
     miss = []
     for i in range(16, ID_Search-16):
