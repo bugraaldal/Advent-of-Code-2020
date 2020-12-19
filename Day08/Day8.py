@@ -1,8 +1,7 @@
 #import os
 #os.chdir("/home/buura/Desktop/Python/AdventOfCode2020")
 """ I turns out I've deleted the second part's answer, so I had to come up with it again.
-    I've actually used a brute force approach at first, however I think this one is far better.
-    I used deepcopy -a method I learnt a while ago while reading "Automate the Boring Stuff with Python". """
+    I've actually used a brute force approach at first. Then changed it in an attempt to find a more efficent solution. """
     
 import copy
 # Setting up some lists in order to jump back and forth in the input lists easily
