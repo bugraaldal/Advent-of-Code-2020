@@ -1,3 +1,4 @@
+# Slow. Really slow
 data = []
 for x in "19,0,5,1,10,13".split(","):
     data.append(int(x))
