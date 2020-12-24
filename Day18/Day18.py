@@ -1,9 +1,9 @@
-# I wouldn't be able to say if this was this was hard or easy. It uses pretty fundamental stuff
-# But changing the rules of math was mind-boggling
+# I wouldn't be able to say if this question was hard or easy. It uses the fundamental stuff. No modules.
+# However changing the rules of math was mind-boggling
 def Part1(part2):
     calc = list()
 
-    with open('Day18.txt') as f:
+    with open("Day18.txt") as f:
         for line in f:
             operation = line.strip().replace(" ", "")
 
@@ -11,11 +11,11 @@ def Part1(part2):
             parentheses = list()
 
             while(True):
-                # Taking the parenthesis and removing(.pop()) them from the list
+                # Taking the parenthesis and removing (.pop()) them from the list
                 for i in range(start, len(operation)):
-                    if operation[i] == '(':
+                    if operation[i] == "(":
                         parentheses.append(i)
-                    elif operation[i] == ')':
+                    elif operation[i] == ")":
                         parenthsis_i = parentheses.pop()
                         # Calling the change function in order the change the laws of the math
                         val = change(operation[parenthsis_i+1:i], part2)
@@ -25,7 +25,7 @@ def Part1(part2):
                             str(val) + operation[i+1:]
                         break
 
-                if operation.count('(') == 0:
+                if operation.count("(") == 0:
                     calc.append(change(operation, part2))
                     break
 
@@ -48,13 +48,13 @@ def change(operation, part2):
         n2i = -1
 
         for i, c in enumerate(operation):
-            if c == '+' or c == '*':
+            if c == "+" or c == "*":
                 if opfound:
                     n2i = i
                     break
                 else:
                     if part2:
-                        if not (c == '+' or operation.count('+') == 0):
+                        if not (c == "+" or operation.count("+") == 0):
                             n1i = i + 1
                         else:
                             opfound = True
@@ -75,14 +75,14 @@ def change(operation, part2):
             n2 = 0
             n2 = int(operation[opi+1:n2i])
 
-        if op == '+':
+        if op == "+":
             n = n1 + n2
-        elif op == '*':
+        elif op == "*":
             n = n1 * n2
 
         if part2:
             operation = operation[:n1i] + str(n) + operation[n2i:]
-            if operation.count('+') + operation.count('*') == 0:
+            if operation.count("+") + operation.count("*") == 0:
                 return n
 
         else:
