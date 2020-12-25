@@ -11,7 +11,7 @@ def same(first, second):
 
 
 data = []
-with open("21.txt", "r") as f:
+with open("Day21.txt", "r") as f:
     for i in f.readlines():
         data.append(i.strip(")\n"))
 
