@@ -1,6 +1,6 @@
 #This was... fun?
 import numpy as np
-with open("24.txt", "r") as f:
+with open("Day24.txt", "r") as f:
     _input = [each.strip() for each in f.readlines()]
 # coords
 placeChange = {"e": (2, 0), "se": (1, -1), "sw": (-1, -1), "w": (-2, 0),
